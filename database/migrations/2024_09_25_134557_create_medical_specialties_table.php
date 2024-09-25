@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('medical_specialties', function (Blueprint $table) {
             $table->id();
             $table->string("medical_specialty");
-            $table->foreignId('profile_id')->references('id')->on('profile')->onDelete('cascade');
+            $table->foreignId('profile_id')->references('id')->on('profiles')->onDelete('cascade');
             $table->timestamps();
         });
     }
