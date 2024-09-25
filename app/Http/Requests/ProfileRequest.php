@@ -41,7 +41,7 @@ class ProfileRequest extends FormRequest
             "booking_btn_name" => "nullable|string|max:255",
             "booking_btn_value" => "nullable|string|max:255",
             "medical_specialties" => "required|array",
-            "medical_specialties.*" => "sting|required"
+            "medical_specialties.*" => "required"
         ];
     }
 }
